@@ -3,8 +3,7 @@ let userSchema=mongoose.Schema({
     name:String,
     emailid:{
         type:String,
-        unique:true
-    },
+        unique:true    },
     password:String,
     role:{
         type:String,
