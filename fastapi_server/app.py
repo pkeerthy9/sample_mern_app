@@ -18,4 +18,4 @@ def updatestudent():
 #localhost:8000/deletestudent
 @app.delete("/deletestudent")
 def deletestudent():
-    return "student data is deleted"
+    return "student data is deleted successfully"
