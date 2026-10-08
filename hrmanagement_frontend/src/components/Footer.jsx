@@ -1,10 +1,10 @@
 import App from "../App"
 
-functon Footer(){
+function Footer(){
     return(
         <div>
-            <Footer>@copyrights 2026 - keerthy</Footer>
+            <footer>@copyrights 2026 - keerthy</footer>
         </div>
     )
 }
-export default App
+export default Footer
