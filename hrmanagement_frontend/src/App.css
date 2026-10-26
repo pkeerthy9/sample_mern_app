@@ -17,6 +17,18 @@
   }
 }
 
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+h1, h2, h3 {
+  text-align: center;
+}
+
+
 .hero {
   position: relative;
 
