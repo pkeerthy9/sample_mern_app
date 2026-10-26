@@ -1,15 +1,24 @@
-import{Link} from "react-router-dom"
 
-function Header(){
+import { Link } from "react-router-dom";
 
-    return(
-        <div >
-            <Link to="/">Home</Link>
-            <Link to="/About">About us</Link>
-            <Link to="/Contact">Contact us</Link>
-
-        </div>
-    )
+function Header() {
+  return (
+    <nav
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        gap: "60px",
+        width: "100%",
+        padding: "20px",
+        backgroundColor: "#f2f2f2"
+      }}
+    >
+      <Link to="/" style={{ display: "inline-block" }}>Home</Link>
+      <Link to="/About" style={{ display: "inline-block" }}>About us</Link>
+      <Link to="/Contact" style={{ display: "inline-block" }}>Contact us</Link>
+    </nav>
+  );
 }
 
-export default Header
+export default Header;
