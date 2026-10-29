@@ -17,6 +17,7 @@ function Header() {
       <Link to="/" style={{ display: "inline-block" }}>Home</Link>
       <Link to="/About" style={{ display: "inline-block" }}>About us</Link>
       <Link to="/Contact" style={{ display: "inline-block" }}>Contact us</Link>
+      <Link to="/Register">Register</Link>
     </nav>
   );
 }

@@ -4,11 +4,13 @@ let cors = require('cors');
 let app = express();
 let mongoose = require('mongoose');
 
-let emproutes = require('./routes/employee_route');
-let hrroutes = require('./routes/hr_route');
 
-app.use(cors());
+let hrroutes = require('./routes/hr_route');
+let emproutes = require('./routes/employee_route');
+
 app.use(express.json());
+app.use("/api/employee", emproutes);
+
 
 mongoose.connect("mongodb://localhost:27017/hrmanagement")
     .then(() => console.log("db connected successfully"))

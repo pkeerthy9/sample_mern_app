@@ -9,22 +9,20 @@ function Register()
 
     let handleRegister=async (event)=>{
         event.preventDefault()
-        let res=await fetch("http://localhost:3000/api/emp/register",
-            {
-                method:"POST",
-                headers:{"Content-Type":"application/json"},
-                body:JSON.stringify({name,emailid,password,role})
-                
-            })
-            let data=await res.json()
-            if(res){
-                console.log("data inserted success");
-                console.log(data)
+      let res = await fetch("http://localhost:3000/api/employee/register", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ name, emailid, password, role })
+});
 
-            }else{
-                console.log("data insertion failed")
-                console.log(data)
-            }
+let data = await res.json();
+console.log(data);
+
+if (res.ok) {
+    alert("Registration successful!");
+} else {
+    alert(data.msg || "Registration failed");
+}
     }
     return(
         <div>
